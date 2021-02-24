@@ -24,6 +24,7 @@ public class HomeController {
     public String venuedetails(Model model,
                                @PathVariable(required = false)  String venueName){
         model.addAttribute("venuneName",(venueName!=null) ? venueName : "--no venue chosen--" );
+        model.addAttribute("appName",appName);
         return venueName;
     }
 
