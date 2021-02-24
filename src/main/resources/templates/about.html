@@ -6,7 +6,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1> bla bla bla </h1>
+<h1 th:text="${appName}+' --- '+${appName}">appname</h1>
 <p> dit is text</p>
 <p th:text="${appName}">appName</p>
 <a th:href="@{/home}">home</a>

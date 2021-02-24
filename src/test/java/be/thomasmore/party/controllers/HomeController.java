@@ -20,16 +20,11 @@ public class HomeController {
         model.addAttribute("appName",appName);
         return "about";
     }
-    @GetMapping("/venuedetails/{venueName}")
+    @GetMapping({"/venuedetails","/venuedetails/{venueName}"})
     public String venuedetails(Model model,
-                               @PathVariable String venueName){
-        model.addAttribute("venuneName",venueName);
+                               @PathVariable(required = false)  String venueName){
+        model.addAttribute("venuneName",(venueName!=null) ? venueName : "--no venue chosen--" );
         return venueName;
-    }
-    @GetMapping("/venuedetails")
-    public String venuedetails(){
-
-        return "venuedetails";
     }
 
 
