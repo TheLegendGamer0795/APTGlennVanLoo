@@ -28,8 +28,8 @@ public class HomeController {
         return venueName;
     }
 
-    @GetMapping({"/venuelist")
-    public String venuedetails(Model model){,
+    @GetMapping("/venuelist")
+    public String venuedetails(Model model){
 
         model.addAttribute("appName",appName);
         return "venuelist";
