@@ -1,14 +1,15 @@
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}" href="/css/style.css" />
+    <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}" href="/css/style.css" />
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
-<h1>hooi</h1>
-<p th:text="${mySpecialNumber}">mySpecialNumber</p>
-<a th:href="@{/about}">about</a>
-
+    <h1 th:text="${appName}+' --- '${appName}">appname<h1/>
+    <ul>
+        <li><a th:href="@{/about}">about</a></li>
+        <li><a th:href="@{/venuedetails.html}">venuedetails</a></li>
+    </ul>
 </body>
 </html>
