@@ -6,10 +6,11 @@
     <title>Home</title>
 </head>
 <body>
-    <h1 th:text="${appName}+' --- '${appName}">appname<h1/>
-    <ul>
-        <li><a th:href="@{/about}">about</a></li>
-        <li><a th:href="@{/venuedetails.html}">venuedetails</a></li>
-    </ul>
+    <h1 th:text="${appName}+' --- '+${appName}">appname</h1>
+
+        <a th:href="@{/about}">about</a>
+        <a th:href="@{/venuedetails}">venuedetails</a>
+        <a th:href="@{/test}"></a>
+
 </body>
 </html>
