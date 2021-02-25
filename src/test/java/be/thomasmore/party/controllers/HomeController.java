@@ -34,6 +34,4 @@ public class HomeController {
         model.addAttribute("appName",appName);
         return "venuelist";
     }
-
-
 }
