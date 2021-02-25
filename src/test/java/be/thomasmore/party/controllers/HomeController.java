@@ -29,9 +29,10 @@ public class HomeController {
     }
 
     @GetMapping("/venuelist")
-    public String venuedetails(Model model){
+    public String venuelist(Model model){
 
         model.addAttribute("appName",appName);
         return "venuelist";
     }
+
 }
