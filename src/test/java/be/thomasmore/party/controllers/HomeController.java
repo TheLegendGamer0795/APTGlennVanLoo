@@ -7,31 +7,32 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 
 public class HomeController {
-    private final String appName = "It’s PartyTime!!";
+    private final String appNameHome = "It’s PartyTime!!";
+    private final String appNameVenue = "Lets’s Party!";
 
     @GetMapping({"/","/home"})
     public String home(Model model){
-        model.addAttribute("appName",appName);
+        model.addAttribute("appName",appNameHome);
         return "home";
     }
 
     @GetMapping("/about")
     public String about(Model model){
-        model.addAttribute("appName",appName);
+        model.addAttribute("appName",appNameHome);
         return "about";
     }
     @GetMapping({"/venuedetails","/venuedetails/{venueName}"})
     public String venuedetails(Model model,
                                @PathVariable(required = false)  String venueName){
         model.addAttribute("venuneName",(venueName!=null) ? venueName : "--no venue chosen--" );
-        model.addAttribute("appName",appName);
+        model.addAttribute("appName",appNameVenue);
         return venueName;
     }
 
     @GetMapping("/venuelist")
     public String venuelist(Model model){
 
-        model.addAttribute("appName",appName);
+        model.addAttribute("appName",appNameVenue);
         return "venuelist";
     }
 
