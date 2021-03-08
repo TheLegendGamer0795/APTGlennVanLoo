@@ -10,9 +10,7 @@
         <h1 class="errotext"> opgegeven pagina bestaat niet, klik <a th:href="@{/home}">hier</a> aan om terug te gaan naar de homepage</h1>
     </header>
 
-<footer>
-    <p>© Glenn Van Loo</p>
-</footer>
+    <div th:replace="fragments/footer":: th:footer="">Footer</div>
 
 </body>
 </html>

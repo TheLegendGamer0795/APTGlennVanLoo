@@ -6,12 +6,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1 th:text="${appName}+' --- '+${appName}">appname</h1>
-<p> dit is text</p>
-<p th:text="${appName}">appName</p>
-<a th:href="@{/home}">home</a>
-<a th:href="@{/venuelist}">venuelist</a>
-<a th:href="@{/about}">about</a>
-
+<div th:replace="fragments/header":: th:header="">Header</div>
+<div th:replace="fragments/footer":: th:footer="">Footer</div>
 </body>
 </html>

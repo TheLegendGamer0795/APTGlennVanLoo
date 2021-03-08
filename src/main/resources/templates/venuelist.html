@@ -6,13 +6,16 @@
     <title>venuedetails</title>
 </head>
 <body>
-<h1 th:text="${appName}">appname</h1>
-<a th:href="@{/about}">about</a>
-<a th:href="@{/home}">home</a>
-<a th:href="@{/venuedetails/De Carré}">De Carré</a>
-<a th:href="@{/venuedetails/De Loods}">De Loods</a>
-<a th:href="@{/venuedetails/Sportpaleis}">Sportpaleis</a>
+<div th:replace="fragments/header":: th:header="">Header</div>
 
-
+    <div class="midden">
+        <h2>Venues</h2>
+        <div class="venuelist">
+            <a th:href="@{/venuedetails/De Carré}">De Carré</a>
+            <a th:href="@{/venuedetails/De Loods}">De Loods</a>
+            <a th:href="@{/venuedetails/Sportpaleis}">Sportpaleis</a>
+        </div>
+    </div>
+<div th:replace="fragments/footer":: th:footer="">Footer</div>
 </body>
 </html>

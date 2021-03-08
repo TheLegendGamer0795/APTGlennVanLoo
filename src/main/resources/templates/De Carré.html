@@ -6,11 +6,8 @@
     <title>venuedetails</title>
 </head>
 <body>
-<h1 th:text="${appName}+' --- '+${appName}">appname</h1>
+<div th:replace="fragments/header":: th:header="">Header</div>
 <h2><p th:text="${venuneName}">venuedetails</p></h2>
-<a th:href="@{/about}">about</a>
-<a th:href="@{/home}">home</a>
-<a th:href="@{/venuelist}">venuelist</a>
-
+<div th:replace="fragments/footer":: th:footer="">Footer</div>
 </body>
 </html>

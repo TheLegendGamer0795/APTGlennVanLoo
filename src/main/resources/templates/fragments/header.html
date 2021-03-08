@@ -1,13 +1,19 @@
 <!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}" href="/css/style.css" />
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>venuedetails</title>
+    <title>header</title>
 </head>
 <body>
-    <div th:replace="fragments/header":: th:header="">Header</div>
-    <h2><p th:text="${venuneName}">venuedetails</p></h2>
-    <div th:replace="fragments/footer":: th:footer="">Footer</div>
+<header th:fragment="header">
+    <h1 th:text="${appName}">appname</h1>
+    <ul>
+        <li><a th:href="@{/about}">about</a></li>
+        <li><a th:href="@{/venuelist}">venuelist</a></li>
+        <li> <a th:href="@{/home}">home</a></li>
+    </ul>
+</header>
 </body>
 </html>

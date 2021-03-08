@@ -9,9 +9,13 @@ header{
 }
 
 h1{
-    font-size: 100px;
+    font-size: 110px;
     text-align: center;
     font-weight: bold;
+    color: lightpink;
+}
+footer{
+    text-align: center;
     color: lightpink;
 }
 
@@ -57,4 +61,32 @@ ul a:hover{
     text-align: center;
     font-weight: bold;
     color: lightpink;
+}
+.midden{
+    font-size: 60px;
+    background-color: lightcoral;
+    height: 800px;
+    margin-top: 200px;
+    padding-left: 5%;
+}
+
+.venuelist{
+    width: 700px;
+    height: 300px;
+    margin-left: 5%;
+    padding: 10px;
+}
+.venuelist a{
+    font-size: 50px;
+    color: darkcyan;
+    background-color: lightpink;
+    display: block;
+    text-align: center;
+    padding:10px;
+    margin: 10px;
+}
+.venuelist a:hover{
+    color: lightpink;
+    background-color: darkcyan;
+    border: 2px solid lightpink;
 }
